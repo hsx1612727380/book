@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  
+  <servlet>
+    <servlet-name>ShowAllBooksServlet</servlet-name>
+    <servlet-class>com.hsx.web.controller.ShowAllBooksServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>BuyBookServlet</servlet-name>
+    <servlet-class>com.hsx.web.controller.BuyBookServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteItemServlet</servlet-name>
+    <servlet-class>com.hsx.web.controller.DeleteItemServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ClearCartItemServlet</servlet-name>
+    <servlet-class>com.hsx.web.controller.ClearCartItemServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ChangeNumServlet</servlet-name>
+    <servlet-class>com.hsx.web.controller.ChangeNumServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>ShowAllBooksServlet</servlet-name>
+    <url-pattern>/showAllBooksServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BuyBookServlet</servlet-name>
+    <url-pattern>/buyBookServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteItemServlet</servlet-name>
+    <url-pattern>/deleteItemServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ClearCartItemServlet</servlet-name>
+    <url-pattern>/clearCartItemServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChangeNumServlet</servlet-name>
+    <url-pattern>/changeNumServlet</url-pattern>
+  </servlet-mapping>
+
+</web-app>
